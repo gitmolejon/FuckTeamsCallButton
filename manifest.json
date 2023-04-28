@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Fuck Teams Call Buttons",
+  "version": "1.0",
+  "description": "This extension will hide the fucking teams call button",
+  "content_scripts": [
+    {
+      "matches": ["*://teams.microsoft.com/*"],
+      "css": ["hideStartCallButton.css"]
+    }
+  ],
+  "permissions": ["activeTab"],
+  "icons": {
+    "48": "icon48.png"
+  }
+}
